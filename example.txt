@@ -1,0 +1,8 @@
+#Example: implenting the functions
+#Run both functions makeCacheMatrix and cacheSolve in R then
+> x <- matrix(data=rnorm(9),3,3)
+>testobj <- makeCacheMatrix(x)
+> testobj$get()
+> cacheSolve(testobj)
+>cacheSolve(testobj)
+
