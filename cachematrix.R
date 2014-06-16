@@ -1,6 +1,9 @@
-
-## This function returns some set of functions to cache the matrix inverse as
-#set , get, setInverse and getInverse
+## This first function create a special "matrix", by the help four functions
+#set: set the value of the matrix
+#get: get the value of the matrix
+#setInverse : set the value of the inverse of a matrix
+#getInverse : get the value of the inverse of a matrix
+#finally it returns all these four functions
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -36,7 +39,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## This function computes the inverse of matrix. If the inverse of that particular matrix (same matrix as above, not changed) is already calculated  then our cacheSolve function will return the cached inverse matrix, otherwise it computes the inverse of a matrix and set the catche values too.
+## This function computes the inverse of special matrix created by above functions.
+# If the inverse of that particular matrix (same matrix as above, not changed) is already calculated  then our cacheSolve function will return the cached inverse matrix and skip the computations below, otherwise it computes the inverse of a matrix and set the cach values too.
 
 cacheSolve <- function(x, ...) {
         ## Return the inverse of a matrix
