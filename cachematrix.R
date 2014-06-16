@@ -1,3 +1,5 @@
+##assume that the matrix supplied is always invertible.
+
 ## This first function create a special "matrix", by the help four functions
 #set: set the value of the matrix
 #get: get the value of the matrix
